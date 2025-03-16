@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(229, 172, 243);
+}
+h1 {
+    color: rgb(12, 105, 9);
+}
+li {
+    color: rgb(12, 105, 9);
+}

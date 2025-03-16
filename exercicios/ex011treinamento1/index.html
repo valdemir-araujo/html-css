@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de treinamento</title>
+    <link rel="shortcut icon" href="bebo.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Exercicio de treinamento</h1>
+    <h2>colocamdo imagens</h2>
+    <p>usa-se a tag <mark>IMG</mark> e segura control + espaço para escolher a imagem</p>
+    <img src="html5250.png" alt="logo HTML">
+    <img src="css200.png" alt="logo CSS">
+    <img src="java70.png" alt="loho JAVA SCRIPT">
+    <h2>colocando síbolos especiais </h2>
+    <p>usa-se <mark>&</mark> e se escolhe o codigo do síbolo </p>
+    &euro;
+    &cent;
+    &Delta;
+    <h2>colocando emojis</h2>
+    <p>usa-se <mark>&#x</mark> + o codigo do emoji escolhido</p>
+    &#x1F600;
+    &#128536;
+    &#128549;
+    &#x1F601;
+    <h2>listas ordenadas</h2>
+    <p>usa-se a tag <mark>ol</mark> para criar uma lista e <mark>dentro de ol a tag li</mark> para ordenar a lista</p>
+    <ol>
+        <li>acordar</li>
+        <li>tomar cafe</li>
+        <li>ir pro trabalho</li>
+        <li>almoçar</li>
+    </ol>
+    <p>na frente de ol usa-se <mark>type= "I", type= "1", type= "i", type= "a", type= "A"</mark> para escolher a ordenação</p>
+    <ol type="I">
+        <li>acordar</li>
+        <li>tomar cafe</li>
+        <li>ir pro trabalho</li>
+        <li>almoçar</li>
+    </ol>
+    <h2>lista não ordenada</h2>
+    <p>usa-se a <mark>tag ul e dentro de ul a tag li</mark> </p>
+    <ul>
+        <li>alberto</li>
+        <li>acordar</li>
+        <li>lavar roupa</li>
+        <li>cozinhar</li>
+        <li>ir pra faculdade</li>
+        <li>almoçar</li>
+        <li>trabalhar</li>
+        <li>dormir</li> 
+    </ul>
+    <p>usa-se na frente de <mark>ul type=square, type=circle</mark> para mudar para quadrado e circulo </p>
+    <ul type="square">
+        <li>alberto</li>
+        <li>acordar</li>
+        <li>lavar roupa</li>
+        <li>cozinhar</li>
+        <li>ir pra faculdade</li>
+        <li>almoçar</li>
+        <li>trabalhar</li>
+        <li>dormir</li> 
+    </ul>
+    <ul type="circle">
+        <li>alberto</li>
+        <li>acordar</li>
+        <li>lavar roupa</li>
+        <li>cozinhar</li>
+        <li>ir pra faculdade</li>
+        <li>almoçar</li>
+        <li>trabalhar</li>
+        <li>dormir</li> 
+    </ul>
+    <h2>juntando lista</h2>
+    <h3>meus estilos de musicas favoritos</h3>
+    <ol>
+        <li>pop rock</li>
+        <ol type="1">
+            <li>bon vovi</li>
+            <li>ganseroses</li>
+            <li>aerosmith</li>
+        </ol>
+        <li>melodia</li>
+        <ol type="1" start="4">
+            <li>roxette</li>
+            <li>eros ramazzotti</li>
+            <li>jon secada</li>
+        </ol>
+    </ol>
+    <h1>Outras formatações</h1>
+    <h2>código fonte</h2>
+    <p>O comando document.getElementById(teste) é escrito em javaScripte</p>
+    <p>O comando <code>document.getElementById(teste)</code> é escrito em javaScripte com o uso da tag CODE fica mais espaçado</p>
+    <h2>dentro da <mark>tag code</mark> o codigo fica linear</h2>
+    <code>
+        nun = int(input('digite um numero))'
+        if nun % 2 == 0
+            print(f'o numero {nun} é par')
+        else: 
+            print(f'o numero {nun} é impar)
+        print (fim do programa) uso de tag PRE
+    </code>
+    <h2>agora com a <mark>tag pre e a tag code dentro da tag pre</mark> ao invés de ficar linear fica formatado</h2>
+    <pre>
+        <code>
+            nun = int(input('digite um numero))'
+            if nun % 2 == 0
+                print(f'o numero {nun} é par')
+            else:
+                print(f'o numero {nun} é impar)
+            print (fim do programa)
+        </code>
+    </pre>
+    <h2>formtação de textos</h2>
+    <p>Nesta frase, tenho um <strong>termo em destaque negrito</strong> usando a tag STRONG (semâtica).</p>
+    <p>nesta frase temos um <em>termo em ênfase, ITALICO</em> usando a teg EM (semântica)</p>
+    <p>Para criar um <small>texto pequeno usa-se a tag SMALL</small> e um <big>texto grande usa-se a tag BIG</big> nesse parágrafo.</p>
+    <h2>links externos</h2>
+    <h3>link sem abrir outra janela basta selecionar a parte que eu quero clicar e usar a tag A</h3>
+    <p>abrir link na mesma janela Você pode acessar <a href="https://www.youtube.com/watch?v=KwFrvsnxPW0">este video no youtube</a></p>
+    <h3>link para abrir em outra janela basta acrecentar os comandos target= "_blank" e rel="external" depois do link</h3>
+    <p>abrir link em outra janela <a href="https://www.youtube.com/watch?v=KwFrvsnxPW0" target="_blank" rel="external">acessar video agora</a></p>
+    <h2>links internos ou navegação entre páginas no mesmo site</h2>
+    <p>esta é a primeira pagina do meu site es quiser pode <a href="pag2.html" rel="next">acessar a segunda página</a></p>
+    <p>esta é a primeira pagina do meu site es quiser pode <a href="pag3.html" rel="next">acessar a terceira página</a></p>
+    <!--teste-->
+
+</body>
+</html>
