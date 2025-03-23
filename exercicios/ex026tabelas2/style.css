@@ -1,0 +1,42 @@
+@charset "UTF";
+
+*{
+    padding: 0PX;
+    margin: 0PX;
+    box-sizing: border-box;
+}
+table{
+    border: 2px solid red;
+    border-collapse: collapse;
+
+}
+th{
+    border: 1px solid black;
+    width: 200px;
+    padding: 10px;
+    
+}
+td{
+    border: 1px solid black;
+    width: 200px;
+    padding: 10px;
+}
+tfoot{
+    background-color: gray;
+}
+thead{
+    background-color: gray;
+}
+.negrito{
+    font-weight: bolder;
+    text-align: center;
+}
+.numero{
+    text-align: right;
+}
+#numero{
+    text-align: right;
+}
+.nomes{
+    text-align: center;
+}
