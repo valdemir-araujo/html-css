@@ -12,7 +12,7 @@
         border: 1px solid black;
         padding: 10px
       }
-      table {
+      table.tabela1 {
         border: 3px solid red;
         border-collapse: collapse;
         color: blue;
@@ -37,13 +37,46 @@
         vertical-align: middle;
         text-align: center;
       }
+      table.tabela4{
+        width: 400px;
+        border-collapse: collapse;
+      }
+      .tb4{
+        border: 1px solid black;
+      }
+      .linhatb4{
+        padding: 10px;
+      }
+      .header{
+        background-color: rgb(37, 37, 37);
+        color: white;
+      }
+      .footer{
+        background-color: rgb(39, 39, 39);
+        color: white;
+      }
+      .td4{
+        text-align: right;
+      }
+      caption{
+        font-size: 1.3em;
+        font-weight: bold;
+        background-color: yellow;
+        padding: 10px;
+        margin-bottom: 5px;
+      }
+      tbody tr:nth-child(2n){
+        background-color: gray;
+      }
+
     </style>
   </head>
   <body>
-    <h1>table é tabela</h1>
+    <h1 class="fixado">table é tabela</h1>
     <h1>tr é linha</h1>
     <h1>td é dados</h1>
-    <table>
+    <h1>th é titulo</h1>
+    <table class="tabela1">
       <tr>
         <td>A1</td>
         <td>B1</td>
@@ -111,6 +144,76 @@
           <td class="tb3">C4</td>
         </tr>
       </table>
-      <h1></h1>
+      <h1>como usar tabelas grandes</h1>
+      <table class="tabela4">
+        <caption>Nomes dos etados brasileiros</caption>
+        <thead class="header">
+            <tr class="tb4">
+                <th class="linhatb4">Estado</th>
+                <th class="linhatb4" scope="row" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="tb4">
+                <td class="tb4">são paulo</td>
+                <td class="td4">45.875</td>
+            </tr>
+            <tr class="tb4">
+                <td class="tb4">paraíba</td>
+                <td class="td4">56.786</td>
+            </tr>
+            <tr class="tb4">
+                <td class="tb4">Bahia</td>
+                <td class="td4">35.786</td>
+            </tr>
+            <tr class="tb4">
+                <td class="tb4">Rio de Janeiro</td>
+                <td class="td4">69.786</td>
+            </tr>
+            <tr class="tb4">
+                <td class="tb4">Acre</td>
+                <td class="td4">24.786</td>
+            </tr>
+            <tr class="tb4">
+                <td class="tb4">Minas Gerais</td>
+                <td class="td4">76.786</td>
+            </tr>
+            <tr class="tb4">
+                <td class="tb4">Ceará</td>
+                <td class="td4">34.786</td>
+            </tr>
+            <tr class="tb4">
+                <td class="tb4">Sergipe</td>
+                <td class="td4">24.786</td>
+            </tr>
+            <tr class="tb4">
+                <td class="tb4">Rondonia</td>
+                <td class="td4">43.786</td>
+            </tr>
+            <tr class="tb4">
+                <td class="tb4">Roraima</td>
+                <td class="td4">75.786</td>
+            </tr>
+            <tr class="tb4">
+                <td class="tb4">Amazonas</td>
+                <td class="td4">87.786</td>
+            </tr>
+            <tr class="tb4">
+                <td class="tb4">Mato Grosso</td>
+                <td class="td4">61.786</td>
+            </tr>
+            <tr class="tb4">
+                <td class="tb4">Tocantins</td>
+                <td class="td4">54.786</td>
+            </tr>
+
+        </tbody>
+        <tfoot class="footer">
+            <tr>
+                <th class="linhatb4">Total de habitantes</th>
+                <td class="linhatd4"><strong>269.865.45</strong></td>
+            </tr>
+        </tfoot>
+      </table>
   </body>
 </html>
