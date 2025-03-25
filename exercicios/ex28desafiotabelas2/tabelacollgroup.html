@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela collgroup</title>
+    <style>
+        table{
+            width: 600px;
+            border-collapse: collapse;
+        }
+        td, th{
+            border: 1px solid black;
+            text-align: center;
+        }
+        .cnome{
+            background-color: aqua;
+        }
+        .csexo{
+            background-color: rgb(173, 173, 79);
+        }
+        .cidade{
+            background-color: blueviolet;
+        }
+        .cproff{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cproff">
+        </colgroup>
+        <caption>Cadastros</caption>
+        <thead>
+            <tr>
+                <th rowspan="6">nome</th>
+                <th rowspan="6">sexo</th>
+                <th rowspan="6">idade</th>
+                <th rowspan="6">profissao</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ana maria</td>
+                <td>f</td>
+                <td>34</td>
+                <td>jornalista</td>
+            </tr>
+            <tr>
+                <td>ana maria</td>
+                <td>f</td>
+                <td>34</td>
+                <td>jornalista</td>
+            </tr>
+            <tr>
+                <td>ana maria</td>
+                <td>f</td>
+                <td>34</td>
+                <td>jornalista</td>
+            </tr>
+            <tr>
+                <td>ana maria</td>
+                <td>f</td>
+                <td>34</td>
+                <td>jornalista</td>
+            </tr>
+            <tr>
+                <td>ana maria</td>
+                <td>f</td>
+                <td>34</td>
+                <td>jornalista</td>
+            </tr>
+            <tr>
+                <td>ana maria</td>
+                <td>f</td>
+                <td>34</td>
+                <td>jornalista</td>
+            </tr>
+            <tr>
+                <td>ana maria</td>
+                <td>f</td>
+                <td>34</td>
+                <td>jornalista</td>
+            </tr>
+            <tr>
+                <td>ana maria</td>
+                <td>f</td>
+                <td>34</td>
+                <td>jornalista</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
