@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio Tabelas</title>
+    <style>
+      table {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 600px;
+      }
+      th,
+      td {
+        border: 2px solid black;
+        text-align: center;
+      }
+      caption {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.2em;
+        font-weight: bold;
+        background-color: yellow;
+        padding: 10px;
+        border: 2px solid black;
+        color: red;
+      }
+      thead {
+        background-color: rgb(30, 105, 0);
+        color: white;
+      }
+      .exatas {
+        text-align: left;
+        background-color: gray;
+        color: white;
+      }
+      .exatas2 {
+        background-color: gray;
+        color: white;
+      }
+      tfoot {
+        background-color: yellow;
+        font-size: 1.3em;
+        color: red;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Aprendendo criar tabelas em HTML</h1>
+    <table>
+      <caption>
+        Tabela de Notas
+      </caption>
+      <thead>
+        <tr>
+          <th rowspan="2" scope="col">Área</th>
+          <th rowspan="2" scope="col">Disciplina</th>
+          <th colspan="2" scope="col">Notas</th>
+          <th rowspan="2" scope="col">Média</th>
+        </tr>
+        <tr>
+          <th>Nota 1</th>
+          <th>Nota 2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th rowspan="4" scope="rowgroup">Exatas</th>
+          <td>Matématica</td>
+          <td>7.5</td>
+          <td>6.8</td>
+          <td>8.9</td>
+        </tr>
+        <tr>
+          <td>Fisica</td>
+          <td>7.5</td>
+          <td>6.8</td>
+          <td>8.9</td>
+        </tr>
+        <tr>
+          <td>Quimica</td>
+          <td>7.5</td>
+          <td>6.8</td>
+          <td>8.9</td>
+        </tr>
+        <tr>
+          <td>Biologia</td>
+          <td>7.5</td>
+          <td>6.8</td>
+          <td>8.9</td>
+        </tr>
+        <tr>
+          <th colspan="4" scope="col" class="exatas">Média de exatas</th>
+          <th class="exatas2">9.8</th>
+        </tr>
+        <tr>
+          <th rowspan="2">Humanas</th>
+          <td>Historia</td>
+          <td>5.8</td>
+          <td>8.5</td>
+          <td>9.5</td>
+        </tr>
+        <tr>
+          <td>Geografia</td>
+          <td>6.8</td>
+          <td>7.5</td>
+          <td>3.5</td>
+        </tr>
+        <tr>
+          <th colspan="4" scope="col" class="exatas">Média de Humanas</th>
+          <th class="exatas2">9.1</th>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="5" scope="col">Desafio Cumprido Consegui</th>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

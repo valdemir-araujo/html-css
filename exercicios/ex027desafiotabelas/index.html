@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabela Mesclada</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(211, 203, 194);
+      }
+      table {
+        width: 600px;
+        border-collapse: collapse;
+        font-family: Arial, Helvetica, sans-serif;
+        position: relative;
+      }
+      thead > tr{
+        position: sticky;
+        top: -1px;
+        background-color: yellow;
+      }
+      td,
+      th {
+        border: 1px solid black;
+        text-align: center;
+      }
+      caption {
+        border: 1px solid black;
+        font-weight: bolder;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.2em;
+        background-color: gray;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tabela Mesclada</h1>
+    <table>
+      <caption>
+        Lista de filmes favoritos
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">Grupos</th>
+          <th scope="col">Nomes</th>
+          <th colspan="3" scope="colgroup">Filmes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th rowspan="3" scope="rowgroup">Mulheres</th>
+          <td>Ana Maria Santos</td>
+          <td>Alien</td>
+          <td>Rambo</td>
+          <td>Vingadores</td>
+        </tr>
+        <tr>
+          <td>Beatriz Souza</td>
+          <td>Hulh</td>
+          <td>exception</td>
+          <td>Batman</td>
+        </tr>
+        <tr>
+          <td>Claudia Melo</td>
+          <td>Obvilion</td>
+          <td>Matrix</td>
+          <td>Big Hiro</td>
+        </tr>
+        <tr>
+          <th rowspan="4" scope="rowgroup">Homens</th>
+          <td>Bruno Mendoça</td>
+          <td>Intocáveis</td>
+          <td>Keoma</td>
+          <td>Rápida e Mortal</td>
+        </tr>
+        <tr>
+          <td>Daniel Lourenço</td>
+          <td>Dangal</td>
+          <td>Homen de Ferro</td>
+          <td>Capitão América</td>
+        </tr>
+        <tr>
+          <td>Fabiano Motta</td>
+          <td>Toy story</td>
+          <td>Taxi Driver</td>
+          <td>Os Homens</td>
+        </tr>
+        <tr>
+          <td>Jhonatan Araujo</td>
+          <td>Os Smurfs</td>
+          <td>Patrulha Canina</td>
+          <td>Picapau</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <th colspan="4" scope="row">Total</th>
+        <td>1000</td>
+      </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam earum cumque debitis illum, totam iusto facere at quasi dolor, obcaecati minima! Ipsa minus, vel dignissimos pariatur quidem modi sint expedita.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam earum cumque debitis illum, totam iusto facere at quasi dolor, obcaecati minima! Ipsa minus, vel dignissimos pariatur quidem modi sint expedita.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam earum cumque debitis illum, totam iusto facere at quasi dolor, obcaecati minima! Ipsa minus, vel dignissimos pariatur quidem modi sint expedita.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam earum cumque debitis illum, totam iusto facere at quasi dolor, obcaecati minima! Ipsa minus, vel dignissimos pariatur quidem modi sint expedita.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam earum cumque debitis illum, totam iusto facere at quasi dolor, obcaecati minima! Ipsa minus, vel dignissimos pariatur quidem modi sint expedita.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam earum cumque debitis illum, totam iusto facere at quasi dolor, obcaecati minima! Ipsa minus, vel dignissimos pariatur quidem modi sint expedita.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam earum cumque debitis illum, totam iusto facere at quasi dolor, obcaecati minima! Ipsa minus, vel dignissimos pariatur quidem modi sint expedita.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam earum cumque debitis illum, totam iusto facere at quasi dolor, obcaecati minima! Ipsa minus, vel dignissimos pariatur quidem modi sint expedita.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam earum cumque debitis illum, totam iusto facere at quasi dolor, obcaecati minima! Ipsa minus, vel dignissimos pariatur quidem modi sint expedita.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam earum cumque debitis illum, totam iusto facere at quasi dolor, obcaecati minima! Ipsa minus, vel dignissimos pariatur quidem modi sint expedita.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam earum cumque debitis illum, totam iusto facere at quasi dolor, obcaecati minima! Ipsa minus, vel dignissimos pariatur quidem modi sint expedita.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam earum cumque debitis illum, totam iusto facere at quasi dolor, obcaecati minima! Ipsa minus, vel dignissimos pariatur quidem modi sint expedita.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam earum cumque debitis illum, totam iusto facere at quasi dolor, obcaecati minima! Ipsa minus, vel dignissimos pariatur quidem modi sint expedita.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam earum cumque debitis illum, totam iusto facere at quasi dolor, obcaecati minima! Ipsa minus, vel dignissimos pariatur quidem modi sint expedita.</p>
+  </body>
+</html>
