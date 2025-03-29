@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>checkbox</title>
+  </head>
+  <body>
+    <h1>check box</h1>
+    <form action="cadastro.js" method="get" autocomplete="on">
+      <fieldset>
+        <legend>Esportes favoritos</legend>
+        <input type="checkbox" name="esporte" id="ifutebol" checked/>
+        <label for="ifutebol">futebol</label> <br />
+        <input type="checkbox" name="esporte" id="ivolei" />
+        <label for="ivolei">volei</label> <br />
+        <input type="checkbox" name="esporte" id="ibasquete" />
+        <label for="ibasquete">basquete</label>
+      </fieldset>
+      <fieldset>
+        <legend>filmes favoritos</legend>
+        <input type="radio" name="filmes" id="ivingadores" />
+        <label for="ivingadores"> vingadores</label> <br />
+        <input type="radio" name="filmes" id="irambo" />
+        <label for="irambo"> rambo</label> <br />
+        <input type="radio" name="filmes" id="iblade" />
+        <label for="iblade"> blade</label>
+      </fieldset>
+
+      <input type="submit" value="enviar" />
+      <input type="reset" value="limpar" />
+    </form>
+  </body>
+</html>

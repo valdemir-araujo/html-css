@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input color</title>
+    <style>
+        .foto{
+            background-color: brown;
+            padding: 10px;
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>exemplo de input color</h1>
+    <form action="cadastro.js" method="post" autocomplete="on">
+
+        <p>
+            <label for="icor">cor:</label>
+            <input type="color" name="cor" id="icor" value="#00ff00">
+        </p>
+        <p>
+            <label for="inivel">nível de satisfação</label>
+            <input type="range" name="nivel" id="inivel" value="2" min="1" max="10">
+        </p>
+        <p>
+            <input type="file" name="foto" id="ifoto" class="foto"> <label for="ifoto">foto do perfil</label>
+        </p>
+        <input type="submit" value="enviar">
+        <input type="reset" value="limpar">
+    </form>
+    
+</body>
+</html>
