@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário 4</title>
+    <style>
+        fieldset{
+            width: 500px;
+            background-color: antiquewhite;
+            border-radius: 5px;
+        }
+        legend{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        label{
+            font-weight: bold;
+            text-align: justify;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>caixa de texto de email e telefone</h1>
+    <form action="cadastro.php" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p><label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" required placeholder="nome">
+            </p>
+            <p>
+                <label for="iemail">email</label>
+                <input type="email" name="email" id="iemail" required placeholder="email" autocomplete="email">
+            </p>
+            <p>
+                <label for="itele">telefone</label>
+                <input type="tel" name="tele" id="itele" required placeholder="(XX)XXXXX-XXXX" autocomplete="tel" maxlength="11">
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>
