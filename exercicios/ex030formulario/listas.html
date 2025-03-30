@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>listas</title>
+</head>
+<body>
+    <h1>lista suspença</h1>
+    <form action="cadastro.js" method="post" autocomplete="on">
+        <p>
+            <label for="iesta">estado</label>
+            <select name="estado" id="iesta">
+
+                <optgroup label="sudeste">
+                    <option value="rj">rio de janeiro</option>
+                    <option value="sp">são paulo</option>
+                    <option value="mg" selected>minas gerais</option>
+                </optgroup>
+
+                <optgroup label="nordeste">
+                    <option value="pb">paraiba</option>
+                    <option value="pe">pernambuco</option>
+                    <option value="se">sergipe</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">profissão</label>
+            <input type="text" name="profissão" id="iprof" list="listprof">
+            <datalist id="listprof">
+                <option>administrador</option>
+                <option>cabelereiro</option>
+                <option>pedreiro</option>
+                <option>serralheiro</option>
+
+            </datalist>
+        </p>
+        <p>
+            <label for="imens">menssagem</label> <br>
+            <textarea name="msg" id="imens" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>
