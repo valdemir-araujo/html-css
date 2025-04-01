@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/* estilos para impressora */
+*{
+    padding: 10px;
+    margin: 10px;
+}
+menu{
+    display: none;
+}
+header > h1{
+    color: rgb(255, 0, 0);
+}
+html{
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.5em;
+    font-size: 1.3em;
+}
+article::after{
+    content: 'este artigo foi impresso atrvés do site curso em video';
+    color: red;
+}
+article{
+    width: 100%;
+}
+p{
+    text-indent: 30px;
+}

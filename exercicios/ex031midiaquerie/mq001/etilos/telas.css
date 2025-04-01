@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/* ESTILOS PARA TELAS */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+header{
+    background-color: gray;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.521);
+}
+header > h1{
+    text-align: center;
+    padding: 10px;
+}
+article{
+    width: 600px;
+    margin: auto;
+}
+article > h2{
+    padding: 10px;
+    color: rgb(6, 12, 100);
+}
+menu > ul{
+    background-color: rgb(63, 63, 63);
+    color: white;
+    text-align: center;
+}
+menu > ul >li{
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+}
+p{
+    text-indent: 30px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration: underline;
+    color: red;
+    background-color: yellow;
+    padding-right: 5px;
+    padding-left: 5px;
+    transition: 0.6s;
+    border-radius: 50px;
+}
