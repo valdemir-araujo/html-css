@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/*  Extra small: 320–480 px for mobile devices
+    Small: 601–768 px for tablets
+    Medium: 1200–1400 px for laptops
+    Large: 1400 px and up for large desktops and high-resolution screens 
+*/
+
+@media print{
+
+}
