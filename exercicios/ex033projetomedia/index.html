@@ -4,18 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="shortcut icon" href="img/ai.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
     <title>projeto media query</title>
   </head>
   <body>
     <header>
-      <h1>Projeto media query responssivo para todas as telas</h1>
-      <menu>
+      <h1>Meu site</h1>
+      <span id="burger" class="material-symbols-outlined" onclick="cliqueMenu()">
+        menu
+        </span>
+      <menu id="itens">
         <ul>
-          <li id="l1"><a href="#">Imagens</a></li>
-          <li id="l2"><a href="#">Videos</a></li>
-          <li id="l3"><a href="#">Filmes</a></li>
-          <li id="l4"><a href="#">Músicas</a></li>
-          <li id="l5"><a href="#">Programas</a></li>
+          <li><a href="#">Imagens</a></li>
+          <li><a href="#">Videos</a></li>
+          <li><a href="#">Filmes</a></li>
+          <li><a href="#">Músicas</a></li>
+          <li><a href="#">Programas</a></li>
         </ul>
       </menu>
     </header>
@@ -69,5 +74,6 @@
         </p>
       </article>
     </main>
+    <script src="scripts.js"></script>
   </body>
 </html>
