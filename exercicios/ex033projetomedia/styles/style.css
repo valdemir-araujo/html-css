@@ -58,7 +58,7 @@ main{
     border-bottom-right-radius: 5px;
 
 }
-main > article > h2{
+main > article > h3{
     text-align: center;
     padding-bottom: 20px;
 }
