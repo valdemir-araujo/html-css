@@ -1,29 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/ai.png" type="image/x-icon">
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/telas-maiores.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/ai.png" type="image/x-icon" />
+    <link rel="stylesheet" href="estilos/style.css" />
+    <link rel="stylesheet" href="estilos/telas-maiores.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
     <title>Tela de login</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <section id="login">
-            <div id="imagen">
-                
+      <section id="login">
+        <div id="imagen"></div>
+        <div id="formulario">
+          <h1>login</h1>
+          <p>Seja bem-vindo(a) novamente faça login para acessar sua conta</p>
+          <form action="login.php" method="post" autocomplete="on">
+            <div class="campo">
+              <span class="material-symbols-outlined">person</span>
+              <input
+                type="email"
+                name="login"
+                id="ilogin"
+                placeholder="Digite seu email"
+                autocomplete="email"
+                required
+                maxlength="30"
+              />
+              <label for="ilogin">login</label>
             </div>
-            <div id="formulario">
-                <h1>login</h1>
-                <p>
-                    Seja bem-vindo(a) novamente faça login para acessar sua conta
-                </p>
-                <form action="login.php" method="post">
-
-                </form>
+            <div class="campo">
+              <span class="material-symbols-outlined">vpn_key</span>
+              <input
+                type="password"
+                name="Senha"
+                id="isenha"
+                placeholder="Digite a senha"
+                autocomplete="current-password" required minlength="8" maxlength="20"
+              />
+              <label for="isenha">Senha</label>
             </div>
-        </section>
+            <input type="submit" value="Entrar" />
+            <a href="https://github.com/valdemir-araujo" target="_blank" class="botao">
+              Esqueci minha senha <i class="material-symbols-outlined">email</i>
+            </a>
+          </form>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
