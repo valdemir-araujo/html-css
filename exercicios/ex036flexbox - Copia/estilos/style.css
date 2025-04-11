@@ -15,10 +15,10 @@ h1 {
 main.conteiner {
   background-color: antiquewhite;
   display: flex;
+  flex-wrap: wrap;
 }
 div.item {
   background-color: brown;
-  flex: auto;
   text-align: center;
   margin: 10px 10px;
   border: 3px solid blue;
@@ -26,85 +26,4 @@ div.item {
   color: white;
   padding-top: 3px;
   padding-bottom: 3px;
-}
-main.conteiner2 {
-  background-color: antiquewhite;
-  display: flex;
-  flex-direction: row-reverse;
-}
-div.item2 {
-  background-color: brown;
-  flex: auto;
-  text-align: center;
-  margin: 10px 10px;
-  border: 3px solid blue;
-  border-radius: 10px;
-  color: white;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  width: 100px;
-}
-main.conteiner3 {
-  background-color: antiquewhite;
-  display: flex;
-  flex-direction: column;
-}
-div.item3 {
-  background-color: brown;
-  flex: auto;
-  text-align: center;
-  margin: 10px 10px;
-  border: 3px solid blue;
-  border-radius: 10px;
-  color: white;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  width: 200px;
-}
-div.item5 {
-  background-color: brown;
-  flex: auto;
-  text-align: center;
-  margin: 10px 10px;
-  border: 3px solid blue;
-  border-radius: 10px;
-  color: white;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  width: 200px;
-}
-main.conteiner4 {
-  background-color: antiquewhite;
-  display: flex;
-  flex-direction: column-reverse;
-}
-div.item4 {
-  background-color: brown;
-  flex: auto;
-  text-align: center;
-  margin: 10px 10px;
-  border: 3px solid blue;
-  border-radius: 10px;
-  color: white;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  width: 200px;
-}
-main.conteiner6 {
-  background-color: antiquewhite;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-div.item6 {
-  background-color: brown;
-  flex: auto;
-  text-align: center;
-  margin: 10px 10px;
-  border: 3px solid blue;
-  border-radius: 10px;
-  color: white;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  width: 200px;
 }
