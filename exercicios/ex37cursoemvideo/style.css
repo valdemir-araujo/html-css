@@ -7,7 +7,8 @@
 
 }
 header{
-    background-color: #cef5f8;
+    background-color: #e3f5f7;
+    height: 400px;
 }
 div.conteiner{
     display: flex;
@@ -15,8 +16,5 @@ div.conteiner{
 div.item1 > img{
     width: 180px;
     margin-top: 20px;
-    margin-left: 40px;
-}
-div.item2{
-    
+    margin-left: 50px;
 }
