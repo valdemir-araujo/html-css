@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align self</title>
+    <style>
+        div.conteiner{
+            background-color: sandybrown;
+            display: flex;
+            flex-flow: row wrap;
+            height: 400px;
+        }
+        div.item{
+            border: 1px solid black;
+            text-align: center;
+            background-color: rgb(158, 218, 241);
+            padding: 40px;
+        }
+        div#self{
+            order: 4;
+        }
+        div#self2{
+            order: 5;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>align-self</h1>
+    <div class="conteiner">
+        <div class="item" id="self">1</div>
+        <div class="item" id="self2">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+    </div>
+</body>
+</html>
