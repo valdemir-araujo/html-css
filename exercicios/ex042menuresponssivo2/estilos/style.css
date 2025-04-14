@@ -57,14 +57,14 @@ article > div.media{
 div.media > img{
     display: block;
     margin: auto;
-    width: 350px;
+    width: 250px;
     margin-bottom: 10px;
 }
 div.media > iframe{
     display: block;
     margin: auto;
     margin-top: 10px;
-    width: 90%;
+    width: 350px;
 
 }
 
