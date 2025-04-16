@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid alyout</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+      .conteiner {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas:
+          "header  article article article nav nav"
+          "main main main main nav nav"
+          "main main main main nav nav"
+          "aside aside aside aside aside aside"
+          ". . . . footer footer"
+          
+          ;
+        grid-gap: 10px;
+        margin: 0 auto;
+        width: 1024px;
+        min-height: 400px;
+        padding-top: 10px;
+      }
+      @media screen and (max-width: 700px){
+        .conteiner{
+            grid-template-areas:
+          "header header header header header header "
+          "article article article article article article"
+          "nav nav nav nav nav nav"
+          "main main main main main main"
+          "aside aside aside aside aside aside"
+          "footer footer footer footer footer footer";
+        }
+
+      }
+
+      .l-header {
+        background-color: rgb(150, 226, 245);
+        grid-area: header;
+        text-align: center;
+      }
+      .l-article {
+        background-color: rgb(210, 150, 245);
+        grid-area: article;
+        text-align: center;
+      }
+      .l-nav {
+        background-color: rgb(150, 245, 186);
+        grid-area: nav;
+        text-align: center;
+      }
+      .l-main {
+        background-color: rgb(97, 84, 121);
+        grid-area: main;
+        text-align: center;
+      }
+      .l-aside {
+        background-color: rgb(245, 150, 150);
+        grid-area: aside;
+        text-align: center;
+      }
+      .l-footer {
+        background-color: rgb(245, 236, 150);
+        grid-area: footer;
+        text-align: center;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="conteiner">
+      <header class="l-header">header1</header>
+      <article class="l-article">article1</article>
+      <nav class="l-nav">nav1</nav>
+      <main class="l-main">main1</main>
+      <aside class="l-aside">aside1</aside>
+      <footer class="l-footer">footer1</footer>
+    </div>
+  </body>
+</html>

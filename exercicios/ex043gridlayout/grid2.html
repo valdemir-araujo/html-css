@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid layout</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+      .conteiner {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 10px;
+
+        grid-template-areas:
+          "teste1 teste1 teste1 teste1"
+          "teste2 teste2 teste2 teste3"
+          "teste4 teste4 teste4 teste3";
+      }
+      .item1,
+      .item2,
+      .item3,
+      .item4 {
+        background-color: rgb(143, 233, 245);
+        border: 1px solid black;
+      }
+
+      .item1 {
+        grid-area: teste1;
+      }
+      .item2 {
+        background-color: brown;
+        grid-area: teste2;
+      }
+      .item3 {
+        background-color: rgb(3, 3, 105);
+        grid-area: teste3;
+      }
+      .item4 {
+        background-color: blanchedalmond;
+        grid-area: teste4;
+      }
+      p{
+        margin: 10px;
+        text-justify: auto;
+        text-indent: 25px;
+      }
+      img{
+        width: 300px;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>grid layout</h1>
+    <header>
+      <div class="conteiner">
+        <div class="item1">
+          <h1>Aprendendo grid layout teste teste teste teste teste tes bett  tsssgdctdtb</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+            molestias ad magnam inventore consequuntur labore, minus autem unde
+            ut nostrum saepe officia. Numquam nisi eligendi ipsam sunt a
+            corrupti quibusdam.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+            molestias ad magnam inventore consequuntur labore, minus autem unde
+            ut nostrum saepe officia. Numquam nisi eligendi ipsam sunt a
+            corrupti quibusdam.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+            molestias ad magnam inventore consequuntur labore, minus autem unde
+            ut nostrum saepe officia. Numquam nisi eligendi ipsam sunt a
+            corrupti quibusdam.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+            molestias ad magnam inventore consequuntur labore, minus autem unde
+            ut nostrum saepe officia. Numquam nisi eligendi ipsam sunt a
+            corrupti quibusdam.
+          </p>
+        </div>
+        <div class="item2">
+            <img src="img/aq.png" alt="imagem de teste">
+        </div>
+        <div class="item3">teste3</div>
+        <div class="item4">teste4</div>
+      </div>
+    </header>
+  </body>
+</html>
