@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.conteiner {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+/*.conteiner .items {
+  background-color: rgb(255, 81, 0);
+  grid-column: 1 / 4; 
+  grid-row: 2 / 4;
+}*/
+.conteiner .items {
+    background-color: rgb(255, 81, 0);
+    grid-column: span 3;
+    grid-row: 2 / span 2
+  }

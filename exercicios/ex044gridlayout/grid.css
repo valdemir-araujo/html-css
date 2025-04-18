@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.conteiner{
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr 100px;
+    grid-gap: 10px;
+}
