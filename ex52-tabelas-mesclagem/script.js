@@ -21,7 +21,9 @@ function calcu2() {
   let tota2 = window.document.getElementById("total2");
   let totalfina = window.document.getElementById("totalfinal");
   let to1 = Number(tota1.value);
-  let to2 = Number(tota2.value);
+    let to2 = Number(tota2.value);
+    
+    let tor = tota1 + tota2
 
-  totalfina.innerHTML = to1 + to2;
+  totalfina.innerHTML = tor;
 }
