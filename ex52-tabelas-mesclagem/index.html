@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table{
+            width: 700px;
+            border-collapse: collapse;
+        }
+        td{
+            border: 1px solid black;
+            width: 20px;
+            text-align: center;
+        }
+        .quan{
+            height: 20px;
+            width: 50px;
+            padding: 5px;
+        }
+        .unit{
+            height: 20px;
+            width: 70px;
+            padding: 5px;
+        }
+        .total{
+            height: 20px;
+            width: 70px;
+            padding: 5px;
+            font-weight: bold;
+            font-size: 1,2em;
+        }
+        .desc{
+            height: 20px;
+            width: 450px;
+            padding: 5px;
+        }
+        .totalfinal{
+            text-align: right;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 1.2em;
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>tabelas</h1>
+    <table>
+        <tr > <!--tr significa linha-->
+            <td>Quant.</td> <!--td significa coluna-->
+            <td colspan="3">Descrição</td>
+            <td class="unit">Valor unit.</td>
+            <td class="total">Total</td>
+        </tr>
+        <tr> 
+            <td><input type="number" name="q1" id="q1" class="quan" min="0"></td>
+            <td colspan="3"><input type="text" name="des" id="descricao" class="desc"></td>
+            <td><input type="number" name="q1" id="unit1" class="unit" min="0"></td>
+            <td><div class="total" id="total1">0</div></td>
+
+        </tr>
+        <tr> 
+            <td><input type="number" name="q1" id="q2" class="quan" min="0"></td>
+            <td colspan="3"><input type="text" name="des" id="descricao2" class="desc"></td>
+            <td><input type="number" name="q1" id="unit2" class="unit" min="0"></td>
+            <td><div class="total" id="total2">0</div></td>
+
+        </tr>
+        <tr> 
+            <td colspan="5" class="totalfinal">Total Final</td>
+            <td><div class="total" id="totalfinal">0</div></td>
+
+        </tr>
+    </table>
+    <input type="button" value="calcular" onclick="calcu()">
+    <input type="button" value="calcular2" onclick="calcu2()">
+    <script src="script.js"></script>
+</body>
+</html>
